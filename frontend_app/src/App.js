@@ -43,7 +43,7 @@ function App() {
           Learn React
         </a>
 
-        <div style={{ marginTop: 24 }}>
+        <div style={{ marginTop: 24, display: 'flex', gap: 12 }}>
           <Link
             to="/login"
             className="btn-primary"
@@ -51,6 +51,20 @@ function App() {
             style={{ textDecoration: 'none', paddingLeft: 18, paddingRight: 18 }}
           >
             Go to Login
+          </Link>
+          <Link
+            to="/game"
+            className="btn-primary"
+            aria-label="Go to Tic Tac Toe game page"
+            style={{
+              textDecoration: 'none',
+              paddingLeft: 18,
+              paddingRight: 18,
+              background: 'var(--ocean-secondary)',
+              boxShadow: '0 8px 18px rgba(245,158,11,0.25)'
+            }}
+          >
+            Play Game
           </Link>
         </div>
       </header>
