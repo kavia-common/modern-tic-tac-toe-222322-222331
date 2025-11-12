@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -17,8 +18,8 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App" style={{ background: 'var(--ocean-bg)' }}>
+      <header className="App-header" style={{ borderRadius: '16px', boxShadow: 'var(--shadow-subtle)' }}>
         <button 
           className="theme-toggle" 
           onClick={toggleTheme}
@@ -41,6 +42,17 @@ function App() {
         >
           Learn React
         </a>
+
+        <div style={{ marginTop: 24 }}>
+          <Link
+            to="/login"
+            className="btn-primary"
+            aria-label="Go to Login page"
+            style={{ textDecoration: 'none', paddingLeft: 18, paddingRight: 18 }}
+          >
+            Go to Login
+          </Link>
+        </div>
       </header>
     </div>
   );
