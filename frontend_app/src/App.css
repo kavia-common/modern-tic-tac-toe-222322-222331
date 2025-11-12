@@ -244,3 +244,10 @@
   transform: none;
   box-shadow: var(--shadow-soft);
 }
+
+/* Responsive board sizing on smaller screens */
+@media (max-width: 480px) {
+  .board-cell {
+    height: 86px !important;
+  }
+}
